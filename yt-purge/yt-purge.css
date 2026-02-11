@@ -4,8 +4,6 @@
 #contents, #chips {
     display: none !important;
 }
-
-
 }
 
 @-moz-document domain("youtube.com") {
@@ -32,18 +30,16 @@
 
 /* left side menu (big / extended) - additional sections */
 
-ytd-guide-section-renderer:nth-child(3) { /* explore */
+ytd-guide-section-renderer:nth-child(4) { /* explore */
     display: none !important;
 }
 
-ytd-guide-section-renderer:nth-child(4) { /* other sites */
+ytd-guide-section-renderer:nth-child(5) { /* other sites */
     display: none !important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.youtube.com/watch?") {
-
 /* right-side recommendations
  (below the player in narrow mode) */
 
@@ -54,6 +50,9 @@ ytd-guide-section-renderer:nth-child(4) { /* other sites */
 /* end-screen recommendations */
 
 .videowall-endscreen {
+    display: none !important;
+}
+.ytp-fullscreen-grid-stills-container {
     display: none !important;
 }
 
@@ -76,4 +75,9 @@ ytd-guide-section-renderer:nth-child(4) { /* other sites */
     padding-right: 0 !important;
 }
 
+/* AI summary */
+
+#video-summary {
+    display: none !important;
+}
 }
