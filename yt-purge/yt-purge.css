@@ -80,4 +80,10 @@ ytd-guide-section-renderer:nth-child(5) { /* other sites */
 #video-summary {
     display: none !important;
 }
+
+/* Shorts section in the video description */
+
+:is(ytd-reel-shelf-renderer) {
+    display: none !important;
+}
 }
